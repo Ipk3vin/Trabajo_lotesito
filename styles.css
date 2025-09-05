@@ -103,5 +103,69 @@ footer {
 /*------------------------------------------*/
 
 
+.slider-wrapper {
+    position: relative;
+    max-width: 5000px;
+    margin: 0 auto;
+    overflow: hidden; /* Para ocultar las imágenes que se salen del contenedor */
+    display: block;
+    margin-top: -2199px; /* Asegura que el slider esté debajo del encabezado */
+
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 17 / 7;
+    transition: transform 0.3s ease; /* Para un desplazamiento suave */
+    width: 100%;
+    overflow: hidden;
+    scroll-snap-type:  x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 .25 .5rem #b4121226;
+    border-radius: .5rem;
+
+
+}
+
+.slider img {
+    flex: 1 0 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+
+}
+
+.slider-nav {
+    display: flex;
+    gap: 80rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* Asegura que los botones estén por encima de las imágenes */
+    padding: -50rem;
+    border-radius: 0rem;
+}
+
+.slider-nav a {
+    width: 40rem;
+    height: 40rem;
+    border-radius: 100%;
+    background-color: #ffffff;
+    opacity: 0;
+    transition: opacity 250ms ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
