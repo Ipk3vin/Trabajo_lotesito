@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* Logo de WhatsApp en la parte superior */
+.whatsapp-logo {
+    position: fixed; /* Lo coloca en una posición fija */
+    top: 15px;       /* Ajusta la distancia desde la parte superior */
+    right: 100px;     /* Ajusta la distancia desde el borde derecho */
+    z-index: 9999;  /* Asegura que el logo de WhatsApp no esté detrás del encabezado */
+}
+
+.whatsapp-icon-link {
+    display: block;  /* Lo convierte en un bloque para el contenedor */
+    width: 50px;  /* Ajusta el tamaño del contenedor */
+    height: 50px; /* Ajusta el tamaño del contenedor */
+    border-radius: 50%; /* Hace que el contenedor sea redondo */
+}
+
+/* Tamaño del botón */
+.whatsapp-icon {
+    width: 100%;   /* Hace que la imagen ocupe todo el espacio disponible */
+    height: 100%;  /* Hace que la imagen ocupe todo el espacio disponible */
+    object-fit: contain; /* Asegura que la imagen no se distorsione y se ajuste bien */
+    transition: transform 0.5s ease; /* Asegura que la imagen se ajuste sin perder proporciones */
+}
+
+.whatsapp-icon-link:hover .whatsapp-icon {
+    content: url('whasap1.png'); /* Cambia la imagen al pasar el ratón */
+    transform: scale(1.1); /* Efecto de aumentar el icono cuando se pasa el ratón */
+}
+
+
+footer {
+    background-color: #4d4c45;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 2000px; /* Asegura que el footer esté debajo del contenido */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: flex-start;  /* Alinea los elementos a la izquierda */
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 20px; /* Espacio entre la imagen y los textos */
+}
+
+.left-logo {
+    width: 160px; /* Ajusta el tamaño de la imagen en footer */
+    height: auto;
+}
+
+.footer-contact {
+    text-align: left;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilo para el encabezado */
+.parte-superior {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(73, 72, 72);
+    z-index: 1000;
+    position: fixed; /* Fija el encabezado en la parte superior */
+    top: 0; /* Asegura que se mantenga en la parte superior */
+    left: 0;
+    width: 100%;
+    height: 60px; /* Ajusta la altura del encabezado */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade sombra para destacar */
+}
+
+/* Contenedor para el logo y el texto */
+.logo-empresa-arriba {
+    display: flex;
+    align-items: center;
+    position: relative;  /* Posiciona el contenedor de manera relativa */
+    
+}
+
+/* Estilo para el logo */
+.logo {
+    width: 120px;  /* Ajusta el tamaño del logo */
+    height: auto;  /* Mantiene la proporción del logo */
+    margin-right: 10px;  /* Espacio entre el logo y el texto */
+    position: relative;  /* Permite mover el logo con coordenadas */
+    top: 5px;   /* Mueve el logo 40px hacia abajo */
+    left: 50px;  /* Mueve el logo 50px hacia la derecha */
+}
+
+/* Estilo para el texto */
+.logo-text {
+    font-size: 36px;  /* Tamaño del texto */
+    font-weight: bold;  /* Negrita para el texto */
+    color: #000000;  /* Color oscuro para el texto */
+}
+/*------------------------------------------*/
+
+
+
+
